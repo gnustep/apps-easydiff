@@ -2,7 +2,7 @@
  * DiffTextView.h
  *
  * Copyright (c) 2002 Pierre-Yves Rivaille <pyrivail@ens-lyon.fr>
- *
+ *               2016 The GNUstep Project
  * This file is part of EasyDiff.app.
  *
  * EasyDiff.app is free software; you can redistribute it and/or modify
@@ -29,7 +29,7 @@
 @public
   NSMutableArray *colors;
   NSArray *changes;
-  NSMutableArray *lineRangesArray;
+  NSArray *lineRangesArray;
   NSMutableArray *blockCharacterRangesArray;
   NSRect *blockRectsArray;
   float *separationPosition;

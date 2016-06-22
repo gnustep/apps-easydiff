@@ -3,6 +3,15 @@
 #
 ifeq ($(GNUSTEP_MAKEFILES),)
  GNUSTEP_MAKEFILES := $(shell gnustep-config --variable=GNUSTEP_MAKEFILES 2>/dev/null)
+  ifeq ($(GNUSTEP_MAKEFILES),)
+    $(warning )
+    $(warning Unable to obtain GNUSTEP_MAKEFILES setting from gnustep-config!)
+    $(warning Perhaps gnustep-make is not properly installed,)
+    $(warning so gnustep-config is not in your PATH.)
+    $(warning )
+    $(warning Your PATH is currently $(PATH))
+    $(warning )
+  endif
 endif
 ifeq ($(GNUSTEP_MAKEFILES),)
  $(error You need to set GNUSTEP_MAKEFILES before compiling!)
@@ -17,8 +26,6 @@ VERSION = 0.4.1
 PACKAGE_NAME = EasyDiff
 APP_NAME = EasyDiff
 EasyDiff_APPLICATION_ICON = 
-SVN_MODULE_NAME = easydiff
-SVN_BASE_URL = svn+ssh://svn.gna.org/svn/gnustep/apps
 
 
 #
@@ -37,14 +44,12 @@ AppController.h \
 DiffTextView.h \
 DiffMiddleView.h \
 DiffView.h \
-DiffWrapper.h \
 DiffWindowController.h \
-DiffScroller.h\
 DiffFileChooser.h \
 FileIconView.h
 
 #
-# Class files
+# Objective-C Class files
 #
 EasyDiff_OBJC_FILES = \
 main.m \
