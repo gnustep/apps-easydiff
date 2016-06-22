@@ -13,6 +13,7 @@
 	dist
     );
     BUILDTOOL = "/usr/bin/make";
+    "BUNDLE_IDENTIFIER" = "";
     "CLASS_FILES" = (
 	"main.m",
 	"AppController.m",
@@ -74,7 +75,7 @@
 	"Riccardo Mottola",
 	"Wolfgang Lux"
     );
-    "PROJECT_COPYRIGHT" = "2002-2011";
+    "PROJECT_COPYRIGHT" = "2002-2016";
     "PROJECT_COPYRIGHT_DESC" = "Released under GPL 2.0";
     "PROJECT_CREATOR" = "";
     "PROJECT_DESCRIPTION" = "A graphical diff utility";
@@ -83,7 +84,7 @@
     "PROJECT_GROUP" = "No description avaliable!";
     "PROJECT_MAINTAINER" = "";
     "PROJECT_NAME" = EasyDiff;
-    "PROJECT_RELEASE" = "0.4.0";
+    "PROJECT_RELEASE" = "0.4.1";
     "PROJECT_SOURCE" = "%{gs_name}-%{gs_version}.tar.gz";
     "PROJECT_SUMMARY" = "No summary avaliable!";
     "PROJECT_TYPE" = Application;
