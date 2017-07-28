@@ -98,7 +98,7 @@
 
 - (NSString *)getVCPath: (NSString *)fileName
 {
-  int i, n;
+  NSUInteger i, n;
   BOOL isDir;
   NSString *vcDir, *dir;
   NSFileManager *fm;
@@ -136,7 +136,7 @@
 {
   NSOpenPanel *oPanel;
   NSString *filename1, *filename2;
-  int result;
+  NSInteger result;
   NSString *path = [[NSUserDefaults standardUserDefaults] 
 		    objectForKey:@"OpenDirectory"];
   
@@ -149,8 +149,8 @@
     return;
 
   path = [oPanel directory];
-
   filename1 = [[oPanel filenames] objectAtIndex: 0];
+
 
   [[NSUserDefaults standardUserDefaults] 
     setObject: path
