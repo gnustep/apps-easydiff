@@ -2,7 +2,7 @@
  * DiffWindowController.m
  *
  * Copyright (c) 2002 Pierre-Yves Rivaille <pyrivail@ens-lyon.fr>
- * Copyright (c) 2002-2012, GNUstep Project
+ * Copyright (c) 2002-2020, GNUstep Project
  *
  * This file is part of EasyDiff.app.
  *
@@ -238,8 +238,8 @@
 {
   int oldChoice = choices[[sender tag]];
 
-  NSLog(@"matrixButtonClicked %d, %d", [sender tag],
-	     [sender selectedColumn]);
+  NSLog(@"matrixButtonClicked %d, %d", (int)[sender tag],
+	(int)[sender selectedColumn]);
 
  
   choices[[sender tag]] = [sender selectedColumn] - 1;
