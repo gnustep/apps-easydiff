@@ -2,7 +2,7 @@
  * DiffTextView.m
  *
  * Copyright (c) 2002 Pierre-Yves Rivaille <pyrivail@ens-lyon.fr>
- *               2012 The GNUstep project
+ *               2012-2020 The GNUstep project
  *
  * This file is part of EasyDiff.app.
  *
@@ -449,7 +449,7 @@
           blockRectsArray[i/2].size.width = aRect.size.width;
           blockRectsArray[i/2].origin.x = aRect.origin.x;
 
-          [[colors objectAtIndex: i/2] set];
+          [(NSColor *)[colors objectAtIndex: i/2] set];
 
           NSRectFill(NSIntersectionRect(aRect, blockRectsArray[i/2]));
 
