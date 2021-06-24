@@ -25,7 +25,7 @@ include $(GNUSTEP_MAKEFILES)/common.make
 VERSION = 0.4.1
 PACKAGE_NAME = EasyDiff
 APP_NAME = EasyDiff
-EasyDiff_APPLICATION_ICON = 
+EasyDiff_APPLICATION_ICON = EasyDiff.png
 
 
 #
@@ -33,7 +33,8 @@ EasyDiff_APPLICATION_ICON =
 #
 EasyDiff_RESOURCE_FILES = \
 Resources/main.gorm \
-Resources/window.gorm 
+Resources/window.gorm \
+Resources/EasyDiff.png
 
 
 #
