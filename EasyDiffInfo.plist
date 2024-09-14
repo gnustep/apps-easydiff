@@ -1,5 +1,6 @@
 {
     ApplicationDescription = "A graphical diff utility";
+    ApplicationIcon = "EasyDiff.png";
     ApplicationName = EasyDiff;
     ApplicationRelease = "0.4.1";
     Authors = (
@@ -14,6 +15,7 @@
     FullVersionID = "0.4.1";
     NOTE = "Automatically generated!";
     NSExecutable = EasyDiff;
+    NSIcon = "EasyDiff.png";
     NSMainNibFile = "main.gorm";
     NSPrincipalClass = NSApplication;
     NSRole = Application;

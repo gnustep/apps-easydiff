@@ -1,7 +1,7 @@
 {
     APPCLASS = NSApplication;
     APPKIT = "GNUSTEP-GUI";
-    APPLICATIONICON = "";
+    APPLICATIONICON = "EasyDiff.png";
     "APP_DOCUMENT_BASED" = NO;
     "APP_TYPE" = GORM;
     "BUILDER_TARGETS" = (
@@ -44,6 +44,7 @@
 	"FileIconView.h"
     );
     IMAGES = (
+	"EasyDiff.png"
     );
     INSTALLDIR = "$(GNUSTEP_LOCAL_ROOT)/";
     INTERFACES = (

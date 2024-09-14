@@ -34,7 +34,7 @@ EasyDiff_APPLICATION_ICON = EasyDiff.png
 EasyDiff_RESOURCE_FILES = \
 Resources/main.gorm \
 Resources/window.gorm \
-Resources/EasyDiff.png
+Resources/EasyDiff.png 
 
 
 #
